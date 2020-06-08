@@ -1,5 +1,6 @@
+from urllib.request import urlopen
+from scrapgen import bruteforce
 import requests
-from scrapgen import brutefotce
 
 #http address from which we start scrapping
 p = 'https://www.regit.cars/car/ae51'
@@ -9,4 +10,9 @@ p = 'https://www.regit.cars/car/ae51'
 # and my goal is to find proper BBB combination
 # im using https://www.regit.cars/car/ae51aaf seat ibiza for example
 
-  r = requests.get()
+
+list=list(bruteforce('1234', 4, 3))
+
+for i in range(200):
+    #r =requests.get(p+list[i])
+    print(p+list[i])

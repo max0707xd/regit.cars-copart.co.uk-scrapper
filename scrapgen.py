@@ -11,6 +11,6 @@ def bruteforce(charset, maxlength, minlength=0):
         for candidate in chain.from_iterable(product(charset, repeat=i)
         for i in range(minlength, maxlength + 1)))
 
-# parameter in bracket can be used to take only specific range
+# parameter in square brackets can be used to take only specific range
 # print(list(bruteforce('abcdefghijklmnopqrstuvwxyz', 3))[0:100])
 # print(len(list(bruteforce('abcdefghijklmnopqrstuvwxyz', 3, 2))))

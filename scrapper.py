@@ -23,7 +23,7 @@ for i, guess in enumerate(guesses[0:25]):
     html = bs4.BeautifulSoup(r.text, 'html.parser')
     if len(str(html.title)) > 91:
         print(html.title)
-        urls.append([html.title, f"plate number {i}.\n"])
+        urls.append([str(html.title) + f'plate number {i}.--------------------'])
 print(urls)        
 
 '''
@@ -34,9 +34,7 @@ if len(str(html.title)) == 91:
 else:
     print(html.title)
     
-'''
-    
-'''
+
 list=list(bruteforce('1234', 4, 3))
 
 for i in range(200):

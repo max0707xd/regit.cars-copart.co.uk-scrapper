@@ -7,3 +7,8 @@ I've had a problem with regit.cars, when i knew only first 4 characters of regis
 It compares html title of the regit.cars/car page with the title of unexisting vehicle and saves the registration plate and vehicle name, so you can easily reduce the span of searches to specific make and model.  (idea  -  add fuel type and color ? )
 
 Feel free to add suggestions.
+
+How to use:
+open scrapper.py, edit bruteforce('HERE enter viable letters and numbers you want in your combination ', maxlength of characters in combination integer, minlength of combination integer default is 1 character 0)
+
+depending of how many combinations from list you want, change slice of list in for loop.
